@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <title>my-orders</title>
+</head>
+<body>
+
+    <section class="orders">
+        <nav class="orders__nav">
+            <h3 class="orders__nav-title">Все</h3>
+            <div class="orders__dropdown">
+                <p class="orders__dropdown-title">все</p>
+                <ul class="orders__list">
+                    <li class="orders__list-item orders__list-active" data-f="all">Все</li>
+                    <li class="orders__list-item" data-f="refunds">ВОЗВРАТЫ</li>
+                    <li class="orders__list-item" data-f="cancel">ОТМЕНЕННЫЕ</li>
+                </ul>
+            </div>
+            
+            <div class="orders__search-wrap">
+                <img class="orders__search-icon" src="search-icon.svg" alt="search-icon">
+                <input class="orders__search" type="search" placeholder="Искать в заказах">
+            </div>
+            
+        </nav>
+        <div class="orders__box">
+            <div class="orders__box-item item " >
+                <div class="orders__box-left">
+                    <span class="orders__item-status issued" >Выдан</span>
+                    <span class="orders__item-number">Заказ №1234567</span>
+                    <img class="orders__item-img" src="detali-card-img.jpg" alt="img">
+                </div>
+                <div class="orders__box-right">
+                    <div class="orders__item-buttons">
+                        <button class="orders-btn">Повторить заказ<img class="orders-btn__arrow" src="repeat-arrow.svg"></button>
+                        <a class="orders-btn" href="detalis.html">Детали заказа<img class="orders-btn__arrow" src="repeat-arrow.svg"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="orders__box-item item cancel " >
+                <div class="orders__box-left">
+                    <span class="orders__item-status cancelled" >Отменен</span>
+                    <span class="orders__item-number">Заказ №1234567</span>
+                    <img class="orders__item-img" src="detali-card-img.jpg" alt="img">
+                </div>
+                <div class="orders__box-right">
+                    <div class="orders__item-buttons">
+                        <button class="orders-btn">Повторить заказ<img class="orders-btn__arrow" src="repeat-arrow.svg"></button>
+                        <a class="orders-btn" href="detalis.html">Детали заказа<img class="orders-btn__arrow" src="repeat-arrow.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<section class="error" >
+        <img src="error-img.svg" alt="img">
+        <h1 class="error__title">У вас еще нет заказа.</h1> 
+        <p class="error__text">Ознакомьтесь с нашими товарами, и наслаждайтесь покупками.</p>
+        <button class="error__btn">НАЧАТЬ ПОКУПКИ</button>   
+</section>
+
+
+
+
+<script type="text/javascript"  src="main.js"></script>   
+</body>
+
+</html>
